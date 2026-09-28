@@ -1,0 +1,23 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <Style src="Search.uss" />
+    <ui:VisualElement name="screen">
+        <ui:VisualElement class="toolbar">
+            <ui:Label text="Content Search" class="heading" style="flex-grow: 1;" />
+            <ui:Button name="back-menu" text="Back to Menu" />
+        </ui:VisualElement>
+        <ui:Label text="Search by content name or author" class="hint" />
+        <ui:VisualElement class="toolbar">
+            <ui:TextField name="query" max-length="150" />
+            <ui:Button name="search" text="Search" />
+            <ui:Button name="refresh" text="Refresh" />
+        </ui:VisualElement>
+        <ui:Label name="status" text="Loading library..." />
+        <ui:Label name="summary" text="" />
+        <ui:ScrollView name="results" mode="Vertical" />
+        <ui:VisualElement class="pagination">
+            <ui:Button name="previous" text="Previous" enabled="false" />
+            <ui:Label name="page" text="" />
+            <ui:Button name="next" text="Next" enabled="false" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

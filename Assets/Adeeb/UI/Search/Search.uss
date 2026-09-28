@@ -1,0 +1,24 @@
+#screen {
+    flex-grow: 1;
+    padding: 28px 40px;
+    background-color: rgb(245, 247, 249);
+    color: rgb(32, 42, 52);
+    font-size: 21px;
+    -unity-font-definition: url("NotoSansArabic.asset");
+    -unity-text-generator: advanced;
+}
+.heading { font-size: 32px; margin-bottom: 4px; }
+.hint { font-size: 18px; color: rgb(85, 95, 105); margin-bottom: 14px; }
+.toolbar, .pagination { flex-direction: row; align-items: center; }
+.toolbar { margin-bottom: 12px; }
+#query { flex-grow: 1; margin-right: 12px; }
+#query .unity-text-field__input { min-height: 46px; padding: 4px 12px; background-color: white; color: rgb(32,42,52); }
+Button { min-height: 46px; min-width: 115px; margin-left: 6px; margin-right: 0; padding: 4px 14px; }
+#status { font-size: 17px; white-space: normal; margin-bottom: 8px; }
+#summary { margin-bottom: 10px; white-space: normal; }
+#results { flex-grow: 1; }
+.result-card { background-color: white; margin-bottom: 8px; padding: 10px 18px; border-width: 1px; border-color: rgb(215, 220, 225); flex-shrink: 0; }
+.result-card Label { white-space: normal; font-size: 18px; }
+.result-card .result-title { font-size: 24px; margin-bottom: 3px; }
+.pagination { justify-content: center; margin-top: 12px; }
+#page { min-width: 160px; -unity-text-align: middle-center; font-size: 18px; }
